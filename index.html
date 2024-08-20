@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <title>Bresom - Accueil</title>
     <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-desktop.css" media="screen and (min-width: 959px)">
+    <script src="common.js" defer></script>
 </head>
 <body>
-    <img class="main-logo" src="images/bresom-transparent.svg" alt="">
+    <div id="backdrop" class="hide"></div>
+    <div class="logo-container">
+        <img class="main-logo" src="images/logo-mask.svg" alt="">
+        <img id="mist-a" class="mist" src="images/mist001.png" alt="">
+        <img id="mist-b" class="mist" src="images/mist002.png" alt="">
+        <div id="mist-scroll"></div>
+    </div>
     <nav class="main-navigation">
         <ul>
-            <li><a href="#">Création de personnage</a></li>
+            <li><a href="#">Jouer</a></li>
+            <li><a href="/perso.html">Fiches Persos</a></li>
         </ul>
     </nav>
 </body>
