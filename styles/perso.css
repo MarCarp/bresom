@@ -1,0 +1,18 @@
+/* TITLE */
+.title {
+    color: #fff;
+    font-size: 2rem;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+/* PERSOS */
+#persos {
+    color: #fff;
+}
+
+#persos .perso-element {
+    font-size: 1.6rem;
+    text-align: left;
+    line-height: 2;
+}
