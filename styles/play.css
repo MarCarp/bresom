@@ -1,0 +1,13 @@
+.table-points {
+    margin: auto;
+}
+
+.table-points thead {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.table-points td {
+    font-size: 1.8rem;
+    color: #fff;
+}

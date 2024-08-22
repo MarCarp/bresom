@@ -11,22 +11,23 @@
     <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/home-desktop.css" media="screen and (min-width: 959px)">
-    <script src="common.js" defer></script>
+    <link rel="stylesheet" href="styles/home-desktop.css" media="screen and (min-width: 768px)">
+    <script src="scripts/common.js" defer></script>
 </head>
-<body>
-    <div id="fade-in"></div>
-    <div class="logo-container">
-        <img class="main-logo" src="images/logo-mask.svg" alt="">
-        <img id="mist-a" class="mist" src="images/mist001.png" alt="">
-        <img id="mist-b" class="mist" src="images/mist002.png" alt="">
-        <div id="mist-scroll"></div>
+<body class="fade-in">
+    <div class="main-wrap">
+        <div class="logo-container">
+            <img class="main-logo" src="images/logo-mask.svg" alt="">
+            <img id="mist-a" class="mist" src="images/mist001.png" alt="">
+            <img id="mist-b" class="mist" src="images/mist002.png" alt="">
+            <div id="mist-scroll"></div>
+        </div>
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="/play">Jouer</a></li>
+                <li><a href="/persos">Fiches Persos</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav class="main-navigation">
-        <ul>
-            <li><a href="wip.html" style="text-decoration: line-through" disabled>Jouer</a></li>
-            <li><a href="persos.html">Fiches Persos</a></li>
-        </ul>
-    </nav>
 </body>
 </html>
