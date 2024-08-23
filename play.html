@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/play.css">
     <script src="scripts/common.js" defer></script>
+    <script src="scripts/play.js" defer></script>
 </head>
 <body class="fade-in">
     <div class="main-wrap">
@@ -25,6 +26,14 @@
                     <th>Corps</th>
                     <th></th>
                 </tr>
+                <tr>
+                    <th id="counter-esp" class="counter">12</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th id="counter-phy" class="conuter">12</th>
+                    <th></th>
+                </tr>
             </thead>
             <tbody>
                 <tr id="l-12" class="step">
@@ -33,101 +42,101 @@
                     <td>12</td>
                     <td></td>
                     <td>Indemne</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-adre="1"></td>
                 </tr>
                 <tr id="l-11">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="11"></td>
                     <td>11</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="11"></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr id="l-10">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="10"></td>
                     <td>10</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="10"></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr id="l-9">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="9"></td>
                     <td>9</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="9"></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr id="l-8">
+                <tr id="l-8" class="step">
                     <td>Perturbé</td>
-                    <td><input type="checkbox"></td>
+                    <td><input class="square" type="checkbox" data-espr="8"></td>
                     <td>8</td>
-                    <td><input type="checkbox"></td>
+                    <td><input class="square" type="checkbox" data-phys="8"></td>
                     <td>Blessé</td>
-                    <td><input type="checkbox" name="" id=""></td>
+                    <td><input type="checkbox" data-adre="2"></td>
                 </tr>
-                <tr id="l-7" class="step">
+                <tr id="l-7">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="7"></td>
                     <td>7</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="7"></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr id="l-6" class="step">
+                <tr id="l-6">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="6"></td>
                     <td>6</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="6"></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr id="l-5" class="step">
+                <tr id="l-5">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="5"></td>
                     <td>5</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="5"></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr id="l-4" class="step">
                     <td>Désaxé</td>
-                    <td><input type="checkbox"></td>
+                    <td><input class="square" type="checkbox" data-espr="4"></td>
                     <td>4</td>
-                    <td><input type="checkbox"></td>
+                    <td><input class="square" type="checkbox" data-phys="4"></td>
                     <td>Mutilé</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-adre="3"></td>
                 </tr>
-                <tr id="l-3" class="step">
+                <tr id="l-3">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="3"></td>
                     <td>3</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="3"></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr id="l-2" class="step">
+                <tr id="l-2">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="2"></td>
                     <td>2</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="2"></td>
                     <td></td>
                     <td></td>
                 </tr>
-                <tr id="l-2" class="step">
+                <tr id="l-1">
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-espr="1"></td>
                     <td>1</td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="1"></td>
                     <td></td>
                     <td></td>
                 </tr>
                 <tr id="l-0" class="step">
                     <td>Fou</td>
-                    <td><input type="checkbox" name="" id=""></td>
+                    <td><input type="checkbox" data-espr="0"></td>
                     <td></td>
-                    <td><input type="checkbox"></td>
+                    <td><input type="checkbox" data-phys="0"></td>
                     <td>Mort</td>
                     <td></td>
                 </tr>

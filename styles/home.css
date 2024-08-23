@@ -23,8 +23,6 @@ body.fade-out #fader {
     padding-top: 5rem;
 }
 
-
-
 /* LOGO */
 .logo-container {
     background: white;
@@ -33,15 +31,23 @@ body.fade-out #fader {
     height: 75px;
     overflow: hidden;
     margin: 0 auto;
-    box-shadow: inset 0 0 10px 10px #000;
 }
 
 .main-logo {
     position: relative;
     z-index: 3;
-    box-shadow: 0 0 10px 10px #000;
 }
 
+.logo-container .safe-cache {
+    border: 10px solid #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    height: 90%;
+    width: 95%;
+    transform: translate(-50%, -50%);
+}
 
 /* LOGO DECORATION - MIST */
 .mist {
@@ -87,7 +93,7 @@ body.fade-out #fader {
 .main-navigation a {
     font: inherit;
     color: #fff;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.5s;
