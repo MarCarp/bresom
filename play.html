@@ -11,10 +11,35 @@
     <link href="https://fonts.cdnfonts.com/css/impact" rel="stylesheet">
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/play.css">
+    <link rel="stylesheet" href="styles/play-desktop.css" media="screen and (min-width: 768px)">
+    <!-- link href=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css " rel="stylesheet">
+    <script src=" https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js " defer></script -->
     <script src="scripts/common.js" defer></script>
     <script src="scripts/play.js" defer></script>
 </head>
 <body class="fade-in">
+    <div id="modal-wrap" class="modal-bg">
+        <aside id="dmg-control" class="modal">
+            <div class="input-container">
+                <div class="input-element">
+                    <label for="esp-dmg-counter">Esprit</label>
+                    <button class="dmg-roll" onclick="damageUpdate('esp','up')"></button>
+                    <input id="esp-dmg-counter" type="number" value="0" min="0" max="12">
+                    <button class="dmg-roll roll-down" onclick="damageUpdate('esp','down')"></button>
+                </div>
+                <div class="input-element">
+                    <label for="phy-dmg-counter">Corps</label>
+                    <button class="dmg-roll" onclick="damageUpdate('phy','up')"></button>
+                    <input id="phy-dmg-counter" type="number" value="0" min="0" max="12">
+                    <button class="dmg-roll roll-down" onclick="damageUpdate('phy','down')"></button>
+                </div>
+            </div>
+            <div id="dmg-ctas" class="input-container">
+                <button id="modal-close" class="btn-play">Annuler</button>
+                <button id="dmg-apply" class="btn-play">Appliquer</button>
+            </div>
+        </aside>
+    </div>
     <div class="main-wrap">
         <table class="table-points">
             <thead>
@@ -142,6 +167,8 @@
                 </tr>
             </tbody>
         </table>
+        <button id="btn-damages" class="btn-play">Dégâts</button>
+        <button id="btn-adrenaline" class="btn-play">Adrénaline</button>
     </div>
 </body>
 </html>

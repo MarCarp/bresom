@@ -1,7 +1,8 @@
 /* RESETING */
-html, body, ul {
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* GENERAL */
@@ -40,6 +41,37 @@ body.fade-in {
     animation: fadeIn 1s linear forwards;
 }
 
+/* MODAL */
+.modal-bg {
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.modal-bg:not(.active) {
+    display: none;
+}
+
+.modal-bg .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    height: auto;
+    width: 600px;
+    max-width: 90%;
+}
+
+.modal-bg.active .modal {
+    animation: 0.5s popIn ease-out forwards;
+}
 
 @keyframes fadeIn {
     0% {
@@ -63,4 +95,15 @@ body.fade-in {
         height: 200vh;
         width: 200vw;
     }   
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%,-50%) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%,-50%) translateY(0);
+    }
 }
