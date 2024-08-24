@@ -5,15 +5,28 @@
 
 .table-points thead th {
     font-size: 3rem;
+    font-weight: 400;
     color: #fff;
     padding-bottom: 2rem;
 }
 
 .table-points td {
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1.8rem;
+    font-weight: 600;
     color: #fff;
 }
 
+.table-points tr td:nth-of-type(1){
+    text-align: right;
+}
+
+
+.table-points tr td:nth-of-type(5){
+    text-align: left;
+}
+
+/* INPUT CHECKBOX */
 .table-points input[type="checkbox"] {
     position: relative;
     appearance: none;
@@ -29,7 +42,8 @@
     border-radius: 50%;
 }
 
-input[type="checkbox"]::after {
+input[type="checkbox"]::after,
+input[type="checkbox"].square::before {
     content: "";
     position: absolute;
     background: #000;
@@ -37,14 +51,44 @@ input[type="checkbox"]::after {
     width: 10px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) scaleY(0);
     transition: all 0.5s;
 }
 
 .table-points input[type="checkbox"]:not(.square)::after {
+    transform: translate(-50%, -50%) scaleY(0);
     border-radius: 50%;
 }
 
-input[type="checkbox"]:checked::after {
+input[type="checkbox"]:not(.square):checked::after {
     transform: translate(-50%, -50%) scaleY(1);
+}
+
+/* INPUT SQUARE */
+.table-points input[type="checkbox"].square::after,
+.table-points input[type="checkbox"].square::before {
+    height: 0;
+    width: 14px;
+}
+
+.table-points input[type="checkbox"].square::after {
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+
+
+.table-points input[type="checkbox"].square::before {
+    transform: translate(-50%, -50%) rotateZ(45deg);
+}
+
+.table-points input[type="checkbox"].square:checked::after,
+.table-points input[type="checkbox"].square:checked::before {
+    height: 4px;
+}
+
+/* INPUT ADRE */
+.table-points input[data-adre] {
+    transition: 0.3s all;
+}
+
+.table-points input[data-adre].close {
+    height: 0;
 }

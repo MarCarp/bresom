@@ -2,6 +2,7 @@ const maxPoints = 12;
 
 let mentalHealth = maxPoints;
 let physicHealth = maxPoints;
+let adrenaline = 3;
 
 // DOM
 const counterEsprit = document.getElementById("counter-esp");
@@ -9,6 +10,7 @@ const counterPhysic = document.getElementById("counter-phy");
 
 const checkboxesEsprit = document.querySelectorAll("[data-espr]");
 const checkboxesPhysic = document.querySelectorAll("[data-phys]");
+const checkboxesAdre = document.querySelectorAll("[data-adre]");
 
 const tableEsprit = [];
 for(espritElem of checkboxesEsprit) {
@@ -20,6 +22,15 @@ const tablePhysic = [];
 for(physicElem of checkboxesPhysic) {
     physicElem.addEventListener("change", updateScore);
     tablePhysic[parseInt(physicElem.dataset.phys)] = physicElem;
+}
+
+function updateAdrenaline() {
+    if(physicHealth <= 8) {
+        checkboxesAdre[1].classList.remove("close");
+    }
+    if(physicHealth <= 4) {
+        checkboxesAdre[2].classList.remove("close");
+    }
 }
 
 function updtateDOMcounter (cat) {
@@ -34,6 +45,7 @@ function updtateDOMcounter (cat) {
             tablePhysic[indexPhy].checked = indexPhy >= physicHealth;
         }
         counterPhysic.innerText = physicHealth;
+        updateAdrenaline();
     }
 }
 
