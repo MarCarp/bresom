@@ -157,36 +157,40 @@ input[type="checkbox"]:not(.square):checked::after {
     padding: 20px;
 }
 
-.input-container {
+#dmg-control .input-container {
     display: flex;
     gap: 30px;
 }
 
-.input-element {
+#dmg-control .input-element {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    width: 90px;
 }
 
-.input-element label {
+#dmg-control .input-element label {
     color: #fff;
     font-size: 3rem;
+    margin-bottom: 0;
 }
 
-.input-element input {
+#dmg-control .input-element input {
     font-size: 3rem;
     padding: 1rem;
+    margin: 10px 0;
     width: 100%;
+    text-align: center;
 }
 
 #dmg-ctas {
-    flex-direction: column-reverse;
     gap: 15px;
     margin-top: auto;
 }
 
-#dmg-ctas button {
+#dmg-ctas .btn-play {
     margin: 0;
+    padding: 10px 30px;
+    font-size: 2rem;
 }
 
 .dmg-roll {
@@ -196,7 +200,7 @@ input[type="checkbox"]:not(.square):checked::after {
     height: 0px;
     width: 100%;
     border-style: solid;
-    border-width: 30px 50px;
+    border-width: 35px 45px;
     border-color: transparent transparent #fff transparent;
 }
 
