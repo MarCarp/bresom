@@ -39,7 +39,7 @@ body.fade-out #fader {
 }
 
 .logo-container .safe-cache {
-    border: 10px solid #000;
+    border: 8px solid #000;
     position: absolute;
     top: 50%;
     left: 50%;
