@@ -31,6 +31,10 @@ body::after {
     z-index: 100;
 }
 
+ul {
+    list-style: none;
+}
+
 /* FADE OUT */
 body.fade-out::after {
     animation: fadeOut 1s linear forwards;

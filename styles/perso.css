@@ -2,12 +2,15 @@
 .title {
     color: #fff;
     font-size: 2rem;
-    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
-               1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
 }
 
 /* PERSOS */
 #persos {
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 90%;
+    margin: auto;
     color: #fff;
 }
 
@@ -15,4 +18,36 @@
     font-size: 1.6rem;
     text-align: left;
     line-height: 2;
+}
+
+.btn-create {
+    appearance: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-family: Impact, sans-serif;
+    position: relative;
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 5px 5px 28px;
+}
+
+.btn-create::before {
+    background-color: #000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    font-weight: 700;
+    height: 40px;
+    width: 40px;
 }

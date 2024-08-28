@@ -205,6 +205,5 @@ input[type="checkbox"]:not(.square):checked::after {
 }
 
 .dmg-roll.roll-down {
-
     border-color: #fff transparent transparent transparent;
 }
