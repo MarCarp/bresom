@@ -1,0 +1,17 @@
+.main-wrap {
+    padding-top: 3rem;
+}
+
+/* DESKTOP - LOGO */
+.logo-container {
+    width: 800px;
+    height: 200px;
+}
+
+.logo-container .safe-cache {
+    border: 20px solid #000;
+}
+
+.main-navigation a {
+    font-size: 4rem;
+}

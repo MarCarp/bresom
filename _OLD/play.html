@@ -18,28 +18,6 @@
     <script src="scripts/play.js" defer></script>
 </head>
 <body class="fade-in">
-    <div id="modal-wrap" class="modal-bg">
-        <aside id="dmg-control" class="modal">
-            <div class="input-container">
-                <div class="input-element">
-                    <label for="esp-dmg-counter">Esprit</label>
-                    <button class="dmg-roll" onclick="damageUpdate('esp','up')"></button>
-                    <input id="esp-dmg-counter" type="number" value="0" min="0" max="12">
-                    <button class="dmg-roll roll-down" onclick="damageUpdate('esp','down')"></button>
-                </div>
-                <div class="input-element">
-                    <label for="phy-dmg-counter">Corps</label>
-                    <button class="dmg-roll" onclick="damageUpdate('phy','up')"></button>
-                    <input id="phy-dmg-counter" type="number" value="0" min="0" max="12">
-                    <button class="dmg-roll roll-down" onclick="damageUpdate('phy','down')"></button>
-                </div>
-            </div>
-            <div id="dmg-ctas" class="input-container">
-                <button id="modal-close" class="btn-play">Annuler</button>
-                <button id="dmg-apply" class="btn-play">Appliquer</button>
-            </div>
-        </aside>
-    </div>
     <div class="main-wrap">
         <table class="table-points">
             <thead>

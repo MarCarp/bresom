@@ -13,22 +13,11 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/home-desktop.css" media="screen and (min-width: 768px)">
     <script src="scripts/common.js" defer></script>
+    
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
 </head>
 <body class="fade-in">
-    <div class="main-wrap">
-        <div class="logo-container">
-            <img class="main-logo" src="images/logo-mask.svg" alt="">
-            <img id="mist-a" class="mist" src="images/mist001.png" alt="">
-            <img id="mist-b" class="mist" src="images/mist002.png" alt="">
-            <div id="mist-scroll"></div>
-            <div class="safe-cache"></div>
-        </div>
-        <nav class="main-navigation">
-            <ul>
-                <li><a href="/play">Jouer</a></li>
-                <li><a href="/persos">Fiches Persos</a></li>
-            </ul>
-        </nav>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
